@@ -93,7 +93,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "KwangJin Shin(신광진)"
+  name             : "KwangJin Shin"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "go high""
   location         : "Republic of Korea"
