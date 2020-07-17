@@ -12,12 +12,12 @@
 
 theme                    : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "DevLog"
-title_separator          : "-"
+title                    : "KJ_LAB"
+title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "KwangJin Shin"
 description              : ""
