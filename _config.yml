@@ -10,19 +10,19 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-# theme                  : "minimal-mistakes-jekyll"
+theme                    : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "ko-KR"
 title                    : "DevLog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "KwangJin Shin"
-description              : "An amazing website."
+description              : ""
 url                      : "https://kor-shin.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+baseurl                  : ""
 repository               : "kor-shin/kor-shin.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
@@ -93,9 +93,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "신광진 "
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "개발기록"
+  name             : "광  진"
+  avatar           : "/assets/images/avatar.jpg"
+  bio              : ""
   location         : "Republic of Korea"
   email            :
   links:
