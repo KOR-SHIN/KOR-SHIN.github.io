@@ -1,6 +1,7 @@
 ---
 layout : posts
 title: 국비지원 개발원 일주일 후기
+comments : true
 tags: 개발원, 개발자, SW, JAVA, OracleDB
 ---
 
