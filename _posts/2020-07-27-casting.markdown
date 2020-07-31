@@ -2,7 +2,11 @@
 layout : posts
 title : JAVA 형변환
 comments : true
-tag : 자바 , JAVA, 형변환, casting
+tag : 
+  - JAVA
+  - TYPE CASTING
+categories :
+  - BASIC JAVA
 ---
 
 ## __목차__

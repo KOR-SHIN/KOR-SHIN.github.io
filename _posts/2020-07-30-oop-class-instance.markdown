@@ -1,6 +1,12 @@
 ---
 layout : posts
 title : 클래스와 인스턴스
+tag :
+    - JAVA
+    - CLASS
+    - INSTANCE
+categories :
+    - BASIC JAVA
 ---
 
 ## __객체지향 프로그래밍<br>(OOP - Oriented Object Programming)__
