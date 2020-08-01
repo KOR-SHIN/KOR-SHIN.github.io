@@ -52,7 +52,7 @@ class Outer {
 public class Ex {
     public static void main(String[] args) {
         //내부 클래스 선언방법
-        Outer out = new Outter();
+        Outer out = new Outer();
         Outer.Inner inner = out.new Inner();
 
         inner.print();
