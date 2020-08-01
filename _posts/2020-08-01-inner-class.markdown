@@ -41,7 +41,7 @@ class Outer {
         int z = 30;
 
         public void print() {
-            System.out.println(x); 
+            System.out.println(x);
             System.out.println(y);
             System.out.println(z);
         }
@@ -119,11 +119,11 @@ public class Ex {
 public class Ex {
     public static void main(String[] args) {
         //정적 내부 클래스 선언방법
-        
+
         int x = 10;
 
         class Inner{
-            int y = 20
+            int y = 20;
         }
 
         Inner in = new Inner();
@@ -170,9 +170,8 @@ public class Ex {
                 System.out.println("Method 추가");
             }
         };
-        
+
         in.printX(); //익명클래스 안에서 생성된 메서드는 밖에서 사용 불가능      
     }
 }
 ```
-
