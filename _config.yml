@@ -20,11 +20,11 @@ title                    : "KJ_LAB"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "KwangJin Shin"
-description              : ""
+description              : "Growing Developer"
 url                      : "https://kor-shin.github.io"
 baseurl                  : ""
 repository               : "kor-shin/kor-shin.github.io"
-teaser                   : "/assets/images/avatar.jpg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : "/assets/images/teaser.jpg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
@@ -95,7 +95,7 @@ analytics:
 author:
   name             : "광  진"
   avatar           : "/assets/images/avatar.jpg"
-  bio              : ""
+  bio              : "Growing Developer"
   location         : "Republic of Korea"
   email            :
   links:
