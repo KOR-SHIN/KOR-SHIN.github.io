@@ -5,8 +5,6 @@ categories :
     - BASIC JAVA
 tag :
     - JAVA
-    - CLASS
-    - INNER CLASS
 ---
 
 ## __중첩 클래스(Nested Class)__

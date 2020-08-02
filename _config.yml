@@ -19,7 +19,7 @@ locale                   : "ko-KR"
 title                    : "KJ_LAB"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "KwangJin Shin"
+name                     : "광  진"
 description              : "Growing Developer"
 url                      : "https://kor-shin.github.io"
 baseurl                  : ""

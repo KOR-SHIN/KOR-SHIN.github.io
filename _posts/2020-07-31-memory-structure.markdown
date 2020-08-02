@@ -4,8 +4,6 @@ title : JVM 메모리 구조
 comments : true
 tag : 
     - JAVA
-    - JVM
-    - MEMORY
 categories :
     - BASIC JAVA
 ---
