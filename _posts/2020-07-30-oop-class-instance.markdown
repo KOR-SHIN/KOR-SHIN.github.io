@@ -3,8 +3,6 @@ layout : posts
 title : 클래스와 인스턴스
 tag :
     - JAVA
-    - CLASS
-    - INSTANCE
 categories :
     - BASIC JAVA
 ---

@@ -4,7 +4,6 @@ title : JAVA 형변환
 comments : true
 tag : 
   - JAVA
-  - TYPE CASTING
 categories :
   - BASIC JAVA
 ---
