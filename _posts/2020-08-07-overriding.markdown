@@ -1,6 +1,6 @@
 ---
 layout : posts
-title : 오버라이딩과 다형성
+title : 오버라이딩과 다형성(Overrding and Polymorphism)
 categories :
     - BASIC JAVA
 tag : 

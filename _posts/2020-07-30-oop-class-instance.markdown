@@ -1,6 +1,6 @@
 ---
 layout : posts
-title : 클래스와 인스턴스
+title : 클래스와 인스턴스(Class and Instance)
 tag :
     - JAVA
 categories :

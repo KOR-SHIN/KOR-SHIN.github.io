@@ -1,6 +1,6 @@
 ---
 layout : posts
-title : JVM 메모리 구조
+title : JVM 메모리 구조(JVM Memory Structure)
 comments : true
 tag : 
     - JAVA

@@ -1,6 +1,6 @@
 ---
 layout : posts
-title : 생성자
+title : 생성자(Constructor)
 categories :
     - BASIC JAVA
 tag :

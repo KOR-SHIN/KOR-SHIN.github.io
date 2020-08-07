@@ -1,6 +1,6 @@
 ---
 layout : posts
-title : JAVA 형변환
+title : 형변환(Type Casting)
 comments : true
 tag : 
   - JAVA
