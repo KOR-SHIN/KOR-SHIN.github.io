@@ -2,11 +2,9 @@
 layout : posts
 title : 버블정렬(Bubble Sorting)
 categories :
-    - DATA STRUCTURE
     - ALGORITHM
 tag : 
     - JAVA
-    - DATA STRUCTURE
     - ALGORITHM
 ---
 
