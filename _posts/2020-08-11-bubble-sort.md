@@ -5,7 +5,7 @@ categories :
 	- ALGORITHM
 	- SOLTING
 tag : 
-    - JAVA
+	- JAVA
 	- ALGORITHM
 	- SORTING
 ---
