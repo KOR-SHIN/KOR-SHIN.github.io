@@ -2,10 +2,12 @@
 layout : posts
 title : 버블정렬(Bubble Sorting)
 categories :
-    - ALGORITHM
+	- ALGORITHM
+	- SOLTING
 tag : 
     - JAVA
-    - ALGORITHM
+	- ALGORITHM
+	- SORTING
 ---
 
 ## __버블정렬(Bubble Sorting)__

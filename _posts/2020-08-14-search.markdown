@@ -2,9 +2,11 @@
 layout : posts
 title : 검색 알고리즘(Search Algorithm)
 categories :
-    - ALGORITHM
+	- ALGORITHM
+	- SEARCH
 tag : 
-    - LINEAR SEARCH
+	- JAVA
+	- SEARCH
 ---
 
 ## __선형검색 알고리즘(LinearSearch Algorithm)__
