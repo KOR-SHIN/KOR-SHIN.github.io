@@ -3,9 +3,7 @@ layout : posts
 title : 검색 알고리즘(Search Algorithm)
 categories :
 	- ALGORITHM
-	- SEARCH
 tag : 
-	- JAVA
 	- SEARCH
 ---
 

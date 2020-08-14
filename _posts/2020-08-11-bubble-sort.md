@@ -3,10 +3,7 @@ layout : posts
 title : 버블정렬(Bubble Sorting)
 categories :
 	- ALGORITHM
-	- SOLTING
 tag : 
-	- JAVA
-	- ALGORITHM
 	- SORTING
 ---
 
