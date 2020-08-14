@@ -1,0 +1,173 @@
+---
+layout : posts
+title : 검색 알고리즘(Search Algorithm)
+categories :
+    - ALGORITHM
+tag : 
+    - LINEAR SEARCH
+---
+
+## __선형검색 알고리즘(LinearSearch Algorithm)__
+---
+`선형검색(LinearSearch)`알고리즘이란, 요소가 직선모양으로 나열되어 있는 배열에서는 순차적으로 요소를 조회하여 원하는 값을 찾을 수 있습니다.<br>
+검색 알고리즘 중 가장 간단한 알고리즘입니다.<br>
+
+`[선형검색 알고리즘 예시]`
+```java
+public int linear(int key, int[] arr) {
+
+    for(int i=0; i<arr.length; i++) {
+        if(arr[i] == key) {
+            return i;
+        }
+    }
+    return -1;
+}
+```
+위 예시에서 선형검색의 종료조건은 두 가지 입니다.
+
+- arr[i] == key인 경우
+    - 배열내에서 원하는 값을 찾은 경우로써, 원하는 값이 위치하고 있는 배열의 인덱스를 반환합니다.
+- n == arr.length인 경우 (n은 반복횟수를 의미합니다.)
+    - 배열내에서 원하는 값을 찾지못한 경우로써, -1을 반환합니다.
+
+## __선형검색(LieanrSearch) 구현__
+---
+`[선형검색 구현]`
+```java
+public class LinearSearch {
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		int[] randomArray = new int[10];
+		
+		for(int i=0; i<randomArray.length; i++) {
+			//Input random value to randomArray
+			randomArray[i] = (int)(Math.random()*50+1);
+			
+			for(int j=0; j<i; j++) {
+				//Remove duplication element
+				if(randomArray[i] == randomArray[j]) {
+					i--;
+				}
+			}
+		}
+		
+		System.out.print("Input keyValue : ");
+		
+		int key = scan.nextInt();
+		
+		int keyIndex = seqSearch(key, randomArray); 
+		
+		if(keyIndex == -1) {
+			System.out.println("Not found keyValue");
+		} else {
+			System.out.print("Find keyValue : ");
+			System.out.println("[Vaule : " + randomArray[keyIndex] + "] [Index : " + "Array[" + keyIndex + "]]");
+		}
+
+	}
+	
+	public static int seqSearch(int key, int[] arr) {
+		
+		for(int i=0; i<arr.length; i++) {
+			if(arr[i] == key) {
+				return i;
+			}
+		}
+				
+		return -1;
+	}
+}
+```
+
+
+## __보초법(Sentinel Method)__
+---
+`보초법(Sentinel Method)`는 말 그대로 `보초`를 배열안에 넣어 놓음으로써, 종료판단을 한번만 하는 방법입니다.<br>
+선형검색은 배열 내에서 원하는 값을 순차적으로 찾아나가는 방법이라고 설명했습니다.<br>
+위에서 보듯이 선형검색은 종료판단을 `return i`, `return -1` 총 2번 하게됩니다.<br>
+`선형검색`과 `보초법`의 공통점은 배열 인덱스를 순차적으로 조회하면서 값을 찾는다는 것입니다<br>
+차이점은 `선형검색`은 종료판단을 2번 하고, `보초법`은 종료판단을 1번만 하면 됩니다<br>
+즉, `보초법`을 사용하면 종료판단의 횟수를 선형검색에 비해 반으로 줄일 수 있는 것입니다<br>
+
+`[보초법 예시]`
+```java
+public int sentinelMethod(int[] a, int n, int key) {
+    //a[] : 검색의 대상이 되는 배열 (배열길이 n+1)
+    //n : 배열의 요소 개수
+    //key : 찾고자 하는 값
+
+    int i = 0;
+
+    a[n] = key;
+
+    while(true) {
+        if(a[i] == key) {
+            break;
+        }
+        i++;
+    }
+
+    return i==n ? -1 : i;
+}
+```
+위의 예시에서 보듯이 보초법은 삼형연산자를 이용하여 종료판단을 한 번만 할 수 있습니다.<br>
+보초법에서는 배열에 넣을 요소가 10개라면, 마지막에 보초를 추가하기 위해서 배열의 크기를 11로 선언해야 합니다.<br>
+`(종료판단을 줄이는 대신, 배열의 크기를 한 칸 늘리는 추가비용이 들어가는 것입니다.)`<br>
+그 후에 검색할 배열, 배열의 요소 개수, 찾고자 하는 값을 메서드의 매개변수로 넘겨줍니다<br>
+`a[n] = key` 부분이 보초를 세우는 부분입니다<br>
+만약 배열의 마지막 인덱스 값`(보초값)`까지 조회했다면, `-1`을 반환하고 마지막 인덱스 전에 값을 찾았다면 그 값이 존재하고 있는 `배열의 인덱스`를 반환합니다.<br>
+설명은 길지만, 결국 보초를 만났는가 아닌가로 반환값이 결정되는 것입니다.<br>
+
+
+## __보초법(Sentinel Method) 구현__
+---
+```java
+public class LinearSearch {
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		int[] randomArray = new int[10];
+		
+		for(int i=0; i<randomArray.length; i++) {
+			//Input random value to randomArray
+			randomArray[i] = (int)(Math.random()*50+1);
+			
+			for(int j=0; j<i; j++) {
+				//Remove duplication element
+				if(randomArray[i] == randomArray[j]) {
+					i--;
+				}
+			}
+		}
+		
+		System.out.print("Input keyValue : ");
+		
+		int key = scan.nextInt();
+		
+		int keyIndex = seqSearch(key, randomArray); 
+		
+		if(keyIndex == -1) {
+			System.out.println("Not found keyValue");
+		} else {
+			System.out.print("Find keyValue : ");
+			System.out.println("[Vaule : " + randomArray[keyIndex] + "] [Index : " + "Array[" + keyIndex + "]]");
+		}
+
+	}
+	
+	public static int seqSearch(int key, int[] arr) {
+		
+		for(int i=0; i<arr.length; i++) {
+			if(arr[i] == key) {
+				return i;
+			}
+		}
+				
+		return -1;
+	}
+}
+```
