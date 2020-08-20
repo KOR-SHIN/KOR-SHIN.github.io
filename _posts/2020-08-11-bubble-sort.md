@@ -2,9 +2,9 @@
 layout : posts
 title : 버블정렬(Bubble Sorting)
 categories :
- - SORTING
+ - ALGORITHM
 tag :
- - SORTING
+ - ALGORITHM
 ---
 
 ## __버블정렬(Bubble Sorting)__

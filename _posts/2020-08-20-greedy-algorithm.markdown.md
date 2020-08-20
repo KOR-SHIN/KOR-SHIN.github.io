@@ -3,10 +3,8 @@ layout : posts
 title : Greedy Algorithm(탐욕 알고리즘)
 categories :
  - ALGORITHM
- - GREEDY
 tag :
  - ALGORITHM
- - GREEDY
 ---
 
 ## __Greedy Algorithm (탐욕 알고리즘)__
@@ -36,5 +34,5 @@ Greedy Algorithm의 대표적인 문제는 거스름돈 줄이기 문제가 있�
 
 이러한 유형의 문제는 순간순간 마다 최적이라고 생각되는 해답을 찾아나갑니다.<br>
 가지고 있는 가장 큰 단위의 거스름돈부터 시작해서 나머지와 몫을 구하는 방법으로 해결합니다.
-문제를 풀어보고 싶은 분은 하단의 [백준 5585번 거스름돈](https://www.acmicpc.net/problem/5585)에서 풀어보시기 바랍니다.
+문제는 [백준 5585번 거스름돈](https://www.acmicpc.net/problem/5585)에서 풀어보시기 바랍니다.
 
