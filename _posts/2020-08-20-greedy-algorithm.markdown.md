@@ -5,6 +5,7 @@ categories :
  - ALGORITHM
 tag :
  - ALGORITHM
+comments : true
 ---
 
 ## __Greedy Algorithm (탐욕 알고리즘)__
