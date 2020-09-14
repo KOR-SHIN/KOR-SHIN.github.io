@@ -2,7 +2,7 @@
 layout : posts
 title : 상속(Inheritance)
 categories :
-    - BASIC JAVA
+    - JAVA
 tag :
     - JAVA
 ---

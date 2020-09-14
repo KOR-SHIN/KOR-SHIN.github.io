@@ -2,7 +2,7 @@
 layout : posts
 title : 오버라이딩과 다형성(Overriding and Polymorphism)
 categories :
-    - BASIC JAVA
+    - JAVA
 tag : 
     - JAVA
 ---

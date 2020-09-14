@@ -5,7 +5,7 @@ comments : true
 tag : 
   - JAVA
 categories :
-  - BASIC JAVA
+  - JAVA
 ---
 
 ## __목차__

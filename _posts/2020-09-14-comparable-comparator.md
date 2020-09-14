@@ -5,7 +5,7 @@ categories :
  - JAVA
 tag :
  - JAVA
- ---
+---
 
 ## __Comparable__
 ---

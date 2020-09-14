@@ -2,7 +2,7 @@
 layout : posts
 title : 중첩 클래스(Nested Class)
 categories :
-    - BASIC JAVA
+    - JAVA
 tag :
     - JAVA
 ---

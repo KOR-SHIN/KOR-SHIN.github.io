@@ -4,7 +4,7 @@ title : 클래스와 인스턴스(Class and Instance)
 tag :
     - JAVA
 categories :
-    - BASIC JAVA
+    - JAVA
 ---
 
 ## __객체지향 프로그래밍<br>(OOP - Oriented Object Programming)__

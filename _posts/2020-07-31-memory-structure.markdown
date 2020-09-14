@@ -5,7 +5,7 @@ comments : true
 tag : 
     - JAVA
 categories :
-    - BASIC JAVA
+    - JAVA
 ---
 
 ## JVM (Java Virtual Machine)
