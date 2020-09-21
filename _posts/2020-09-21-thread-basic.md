@@ -74,8 +74,9 @@ tag:
 
 ## __Thread 실행원리__
 ---
-![Thread%2097b9cd2a6b0145ba8f6e6735787f742b/callStack.png](Thread%2097b9cd2a6b0145ba8f6e6735787f742b/callStack.png)
-
+<div style="text-aline:center;">
+    <img alt="no image" src="https://user-images.githubusercontent.com/67519366/93761482-d0d9c900-fc48-11ea-949d-3e65dfb0b16a.png"></img>
+</div>
 - 이미지 설명
 
     사진에 표현된 것은 JVM에서 Call Stack영역에 속한다. 
