@@ -75,7 +75,7 @@ tag:
 ## __Thread 실행원리__
 ---
 <div style="text-aline:center;">
-    <img alt="no image" src="https://user-images.githubusercontent.com/67519366/93761482-d0d9c900-fc48-11ea-949d-3e65dfb0b16a.png"></img>
+    <img alt="no image" src="https://user-images.githubusercontent.com/67519366/93761482-d0d9c900-fc48-11ea-949d-3e65dfb0b16a.png">
 </div>
 - 이미지 설명
 
