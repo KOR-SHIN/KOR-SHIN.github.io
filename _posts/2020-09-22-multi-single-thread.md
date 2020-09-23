@@ -1,6 +1,6 @@
 ---
 title : Single-Thread VS Multi-Thread
-layout : posts;
+layout : posts
 categories :
  - JAVA
 tag :
