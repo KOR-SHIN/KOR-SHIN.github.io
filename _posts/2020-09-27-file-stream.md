@@ -1,5 +1,5 @@
 ---
-title : FileStream
+title : File Stream(파일 스트림)
 layout : posts
 categories :
  - JAVA
