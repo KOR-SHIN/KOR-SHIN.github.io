@@ -2,7 +2,7 @@
 layout : posts
 title : 생성자(Constructor)
 categories :
-    - BASIC JAVA
+    - JAVA
 tag :
     - JAVA
 ---

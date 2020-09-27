@@ -2,7 +2,7 @@
 layout : posts
 title : 자바의 변수종류(Variables)
 categories :
-    - BASIC JAVA
+    - JAVA
 tag :
     - JAVA
 ---

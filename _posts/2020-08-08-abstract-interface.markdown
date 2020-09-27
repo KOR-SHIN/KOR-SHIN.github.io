@@ -2,7 +2,7 @@
 layout : posts
 title : 추상클래스와 인터페이스 (Abstract Class and Interface)
 categories :
-    - BASIC JAVA
+    - JAVA
 tag :
     - JAVA
 ---
