@@ -1,5 +1,5 @@
 ---
-title : File Encoding
+title : File Encoding(파일 인코딩)
 layout : posts
 categories :
  - JAVA
