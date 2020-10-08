@@ -3,7 +3,7 @@ layout : posts
 title : CHAR, VARCHAR2 (ORACLE)
 categories :
  - ORACLE
- - DATEBASE
+ - DATABASE
 tag :
  - ORACLE
 comments : true
