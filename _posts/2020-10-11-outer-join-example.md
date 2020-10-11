@@ -25,7 +25,7 @@ tag :
 - 오른쪽 외부조인(Right Outer Join)
     - WHERE TABLE1.COL(+) = TABLE2.COL
 
-## __왼쪽 외부조인(Left Outer Join)__
+## __왼쪽 외부조인(LEFT OUTER JOIN)__
 ---
 
 `[왼쪽 외부조인(Left Outer Join) 예시]`
@@ -52,7 +52,7 @@ WHERE E1.MGR = E2.EMPNO(+)
 왼쪽 외부조인은 `WHERE절의 왼쪽열을 기준으로 오른쪽 열의 데이터가 없어도 결과로 출력한다`라고 생각하면 됩니다.
 따라서 `E2.EMPNO`의 데이터가 존재하지 않아도, `E1.MGR`의 데이터가 존재한다면 모두 출력됩니다.
 
-## __오른쪽 외부조인(Right Outer Join)__
+## __오른쪽 외부조인(RIGHT OUTER JOIN)__
 ---
 
 `[오른쪽 외부조인(Right Outer Join) 예시]`
@@ -77,6 +77,42 @@ WHERE E1.MGR(+) = E2.EMPNO
 이번에는 `(+)`표시가 왼쪽에 붙어있으니 오른쪽 외부조인(Right Outer Join)이고, 오른쪽 외부조인은 `WHERE절의 오른쪽열을 기준으로 왼쪽열의 데이터가 없어도 결과로 출력한다`라고 생각하면 됩니다.<br>
 따라서 `E1.MGR`의 데이터가 존재하지 않아도, `E2.EMPNO`의 데이터가 존재한다면 모두 출력됩니다.<br>
 일반적으로 외부조인을 사용할때는 `(null)`이라고 노출되지 않도록 `NVL`함수를 사용하여 NULL값을 처리합니다.<br>
+
+## __전체 외부조인(FULL OUTER JOIN)__
+---
+전체 외부조인은 왼쪽조인의 결과과 오른쪽 조인의 결과가 모두 출력되는 것입니다.<br>
+하지만 `SQL-99`이전 방식에서는 전체 외부조인을 위한 키워드가 없습니다.<br>
+`(+)`기호를 양쪽에 붙이는 방식이 허용되지 않기 때문입니다.<br>
+따라서 전체 외부조인을 사용하기 위해서는 왼쪽외부조인과 오른쪽외부조인을 사용한 쿼리문을 두 개 작성하고, `UNION`이라는 집합 연산자를 통하여 결과를 합쳐야 합니다.
+`SQL-99`방식은 이후 포스팅에서 다루고 오늘은 UNION연산자를 사용하여 전체 외부조인 예시를 살펴보겠습니다.<br>
+
+`[전체 외부조인(Full Outer Join) 예시]`
+```java
+SELECT E1.EMPNO, E1.ENAME, E1.MGR,
+       E2.EMPNO AS MGR_EMPNO,
+       E2.ENAME AS MGR_NAME
+  FROM EMP E1, EMP E2
+ WHERE E1.MGR(+) = E2.EMPNO
+ 
+UNION
+
+SELECT E1.EMPNO, E1.ENAME, E1.MGR,
+       E2.EMPNO AS MGR_EMPNO,
+       E2.ENAME AS MGR_NAME
+  FROM EMP E1, EMP E2
+ WHERE E1.MGR = E2.EMPNO(+)
+ORDER BY EMPNO
+```
+
+`[실행결과]`
+
+<img src="https://user-images.githubusercontent.com/67519366/95677057-e74ac300-0bfd-11eb-890e-1fd8c7eb661f.png">
+
+위에서 실행한 왼쪽외부조인의 결과와 오른쪽외부조인의 결과가 합쳐진 것을 알 수 있습니다.<br>
+따라서 전체 외부조인을 했다는것은 WHERE절의 조인조건에서 오른쪽열 또는 왼쪽열의 데이터가 존재한다면 데이터를 출력하는 것입니다.<br><br>
+여기서 사용된 집합연산자 `UNION`은 두 쿼리문의 중복이 제거된 합집합을 의미합니다.<br>
+`UNION ALL`을 사용하게 되면 두 쿼리문 결과에서 중복을 제거하지 않고 모두 출력합니다.<br>
+
 
 ## __조인 다이어그램(JOIN DIAGRAM)__
 ---
