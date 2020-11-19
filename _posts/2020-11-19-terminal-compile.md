@@ -96,6 +96,8 @@ tag:
 위의 소스코드 내용을 보면 `ClasspathTest`클래스는 `Display`클래스를 인스턴스화 시킨 `dis`라는 참조변수를 이용하여 `display()`라는 메서드를 호출하고 있습니다.<br>
 따라서 `ClasspathTest`클래스는 `Display`클래스를 참조하고 있는데 현재 디렉토리에서 `Display`클래스를 찾을수 없기때문에 에러가 발생한 것입니다<br>
 이럴때 사용할 수 있는것이 `classpath`입니다.
+`classpath`라는것은 클래스를 찾을때 시작점이 되는 위치를 의미합니다.
+예를들어 Terminal에서 `set classpath="d:/webapps/classes`라고 하면 `javac`를 이용하여 컴파일을 하거나 `java`를 이용하여 `.class`파일을 실행할 때 `d:/webapps/classes`경로부터 대상 클래스 파일을 찾게되는 것입니다.
 
 ## __classpath 설정__
 ---
