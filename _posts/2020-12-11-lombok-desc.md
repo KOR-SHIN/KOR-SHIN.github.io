@@ -59,25 +59,25 @@ Annotation을 여러개 선언하지않아도 한번에 모든것을 만들어�
 
 현재 Maven Project를 사용하고 있기때문에 Maven을 기준으로 설명하겠습니다.
 
-우선 첫 번째로 알아두어야 할 것은 Lombok은 의존성주입만으로 사용할 수 없습니다.
+Maven에서 Lombok은 의존성주입만으로 사용할 수 없습니다.
 
 projectLombok에서 jar파일을 다운로드하여 사용하고 있는 이클립스에 plugin을 설치해야 합니다.
 
 ## Lombok 설치 및 적용
 
-![..\assets\posts\2020-12-11-lombok\main.png](..\assets\posts\2020-12-11-lombok\main.png)
+![../assets/posts/2020-12-11-lombok/main.png](../assets/posts/2020-12-11-lombok/main.png)
 
 Google에서 projectLombok을 검색하여 사이트로 접속합니다.
 
-![..\assets\posts\2020-12-11-lombok\down.png](..\assets\posts\2020-12-11-lombok\down.png)
+![../assets/posts/2020-12-11-lombok/down.png](../assets/posts/2020-12-11-lombok/down.png)
 
 메인화면의 상단 네비게이션 바에서 Download를 클릭합니다.
 
-![..\assets\posts\2020-12-11-lombok\down2.png](..\assets\posts\2020-12-11-lombok\down2.png)
+![../assets/posts/2020-12-11-lombok/down2.png](../assets/posts/2020-12-11-lombok/down2.png)
 
 화면에 나와있는 버전을 다운로드 합니다.
 
-![\assets\posts\2020-12-11-lombok\lom.png](..\assets\posts\2020-12-11-lombok\lom.png)
+![/assets/posts/2020-12-11-lombok/lom.png](../assets/posts/2020-12-11-lombok/lom.png)
 
 다운로드가 완료되면 파일이 저장되는 경로에 lombok.jar가 생성됩니다.
 
@@ -87,29 +87,29 @@ Google에서 projectLombok을 검색하여 사이트로 접속합니다.
 
 java -jar lombok.jar `(java -jar [path])`
 
-![..\assets\posts\2020-12-11-lombok\gocu.png](..\assets\posts\2020-12-11-lombok\gocu.png)
+![../assets/posts/2020-12-11-lombok/gocu.png](../assets/posts/2020-12-11-lombok/gocu.png)
 
 위의 명령어를 정상적으로 입력하였다면 위와같은 화면이 나올것입니다.
 
 IDE의 위치를 자동으로 검색해주지만 혹시나 검색이 안되면 아래와 같은 에러가 발생합니다.
 
-![..\assets\posts\2020-12-11-lombok\error.png](..\assets\posts\2020-12-11-lombok\error.png)
+![../assets/posts/2020-12-11-lombok/error.png](../assets/posts/2020-12-11-lombok/error.png)
 
 이러한 에러가 발생하면 확인버튼을 눌러 창을닫아주고
 
 하단에 있는 Specify location..버튼을 클릭합니다.
 
-![..\assets\posts\2020-12-11-lombok\ecl.png](..\assets\posts\2020-12-11-lombok\ecl.png)
+![../assets/posts/2020-12-11-lombok/ecl.png](../assets/posts/2020-12-11-lombok/ecl.png)
 
-버튼을 클릭한 후 자신이 lombok을 설치하고 싶은 eclipse.exe파일이 위치하는 경로를 찾아가서 선택한 후 창을 닫고 install \ update버튼을 클릭합니다.
+버튼을 클릭한 후 자신이 lombok을 설치하고 싶은 eclipse.exe파일이 위치하는 경로를 찾아가서 선택한 후 창을 닫고 install / update버튼을 클릭합니다.
 
-![..\assets\posts\2020-12-11-lombok\close.png](..\assets\posts\2020-12-11-lombok\close.png)
+![../assets/posts/2020-12-11-lombok/close.png](../assets/posts/2020-12-11-lombok/close.png)
 
 성공적으로 설치되었다면 상단에 Install successful이라는 메세지가 나올것입니다.
 
 그리고 선택했던 eclipse.exe파일이 위치하는 경로로 들어가서 lombok.jar가  생성되었다면 성공입니다.
 
-![..\assets\posts\2020-12-11-lombok\dep.png](..\assets\posts\2020-12-11-lombok\dep.png)
+![../assets/posts/2020-12-11-lombok/dep.png](../assets/posts/2020-12-11-lombok/dep.png)
 
 이제 eclipse를 실행하고 maven project의 pom.xml로 들어가서 의존성을 주입합니다.
 
@@ -117,13 +117,13 @@ IDE의 위치를 자동으로 검색해주지만 혹시나 검색이 안되면 �
 
 모두 완료되었다면 maven project를 업데이트하고 Model Object를 생성하여 테스트해보면 됩니다.
 
-![..\assets\posts\2020-12-11-lombok\vo.png](..\assets\posts\2020-12-11-lombok\vo.png)
+![../assets/posts/2020-12-11-lombok/vo.png](../assets/posts/2020-12-11-lombok/vo.png)
 
 테스트용으로 VO클래스를 생성하고 위와같이 Annotation을 적용해보았습니다.
 
 Annotation을 사용하는것은 의존성 주입만 해도 가능하기 때문에 실제로 코드가 만들어지는지 확인해야 합니다.
 
-![..\assets\posts\2020-12-11-lombok\builder.png](..\assets\posts\2020-12-11-lombok\builder.png)
+![../assets/posts/2020-12-11-lombok/builder.png](../assets/posts/2020-12-11-lombok/builder.png)
 
 실제로 코드가 만들어지는지 확인하는 작업은 project Explorer에서 lombok을 사용한 클래스를 확장해보면 알 수 있습니다.
 
